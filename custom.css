@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+body{
+	background: #f8f8f8;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+.container {
+    width: 100%;
+	padding: 0px;    
+}
+/* join box */
+#join{
+	width: 420px;
+	margin: 0 auto;
+	background: #fff;
+	text-align: center;
+	padding: 40px 60px;
+	margin-top: 60px;
+	margin-bottom: 100px;
+	border-radius: 6px;
+}
+
+#join .logo{
+	width: 60px;
+}
+
+#join h3{
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+
+#join p{
+	text-align: left;
+}
+
+#join p.alert{
+	color: red;
+}
+
+#join input{
+	height: 40px;
+}
+#join .btn{
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+}
+
+#content{
+	display: none;
+}
+
+/* top section for channels */
+#channels{
+	border: 1px solid #ddd;
+	background: aliceblue;
+	padding: 10px 20px;
+	margin-bottom: 0px;
+}
+#channels .logo{
+	width: 32px;
+	margin-right: 10px;
+}
+#channels input{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+label.status{
+	float: right;
+	font-weight: normal;
+    margin-top: 5px;
+    color: cornflowerblue;
+}
+/* left sidebar for subscribed */
+#sidebar{
+	width: 25%;
+	height: 80vh;
+	float: left;
+	background: #4D394B;
+    color: rgb(202,196,201);
+}
+
+ul#subscribed{
+	list-style-type: none;
+}
+
+ul#subscribed img{
+	width: 8px;
+	margin-left: 5px;
+}
+
+#sidebar p.intro{
+	padding: 20px;
+	font-size: 14px;
+	font-weight: bold; 
+}
+
+a.channel li{
+	padding: 10px 20px;
+	background: none;
+	border: none;
+	color: rgb(202,196,201);
+	font-size: 16px;
+	border: 0;
+}
+
+a.channel li{
+	text-decoration: none;
+}
+.list-group-item:first-child, .list-group-item:last-child{
+	border-radius: 0;
+}
+
+a.current li{
+	background: #4C9689;
+	color: #fff;
+}
+
+/* main column for messages */
+#main{
+	width: 75%;
+	height: 80vh;
+	padding: 0 0% 0 0%; 
+	float: right;
+	border: 1px solid #ddd;
+	position: relative;
+}
+
+ul#messages{
+	width: 100%;
+	height: 450px;
+	overflow-y: scroll;
+}
+
+
+#messages p{
+	padding: 30px;
+	text-align: center;
+}
+
+.msg-box{
+	height: 30px;
+	position: absolute;
+	bottom: 0px;
+}
+span.time{
+	background: #eee;
+	padding: 5px;
+	border-radius: 4px; 
+	margin-right: 10px;
+}
+footer p.intro{
+	border-top: 1px dashed #ddd;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	color: #bbb;
+	font-size: 13px;
+}

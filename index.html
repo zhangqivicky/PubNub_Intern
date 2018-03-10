@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A Slack-like App for Tech Startup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="custom.js"></script>
+</head>
+<body>
+<div class="container"> 
+
+<div id="join">
+<img src="logo.png" class="logo">
+  <h3>Slack-Like App for Tech Startup</h3>
+  <div class="form-group">
+  <p for="username">Please enter your <b>username</b>.</p>
+  <input type="text" class="form-control" name="username">
+  <button type="button" class="btn btn-success">Join the team</button>
+  <p class="alert"></p>
+  </div>
+</div><!-- end of join -->
+
+<div id="content">  
+<div class="form-group" id="channels">
+  <img src="logo.png" class="logo">
+  <label for="subscribe">Please subscribe channels:</label>
+  <input type="checkbox" value="csloc_general" name="channel[]" checked>General</input>
+  <input type="checkbox" value="csloc_tech" name="channel[]">Tech Team</input>
+  <input type="checkbox" value="csloc_hr" name="channel[]">HR Team</input>
+  <input type="checkbox" value="csloc_ad" name="channel[]">Ad Team</input>
+  <input type="checkbox" value="csloc_op" name="channel[]">Operation</input>
+  <label class="status">Username: <span id="username"></span></label>
+</div>
+
+<div id="sidebar">
+<p class="intro">Subscribed Channels</p>
+  <ul class="list-group" id="subscribed">
+  </ul>
+</div>
+      
+<div id="main">
+  <div class="msg-list">
+  <ul class="list-group" id="messages">
+  </ul>
+  </div>
+  <div class="input-group msg-box">
+   <input type="text" class="form-control" id="msg-input" name="message">
+   <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="msg-submit">Send</button>
+   </span>
+</div>
+</div><!-- end of main -->
+
+</div><!-- end of content -->
+</div><!-- end of container -->
+<footer>
+<p class="intro">* This tool is developed for demo purpose by Qi Zhang based on PubNud API</p>
+</footer>
+</body>
+</html>
